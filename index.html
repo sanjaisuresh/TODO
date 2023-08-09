@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reminder App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Reminder App</h1>
+      <p id="current-time"></p>
+    </div>
+    <div class="content">
+      <div class="reminder-form">
+        <input type="text" id="reminder-message" placeholder="Enter your reminder">
+        <input type="datetime-local" id="reminder-time">
+        <button onclick="setReminder()">Set Reminder</button>
+      </div>
+      <div class="reminder-list">
+        <h2>Reminders List</h2>
+        <ul id="reminder-ul"></ul>
+      </div>
+    </div>
+  </div>
+<div class="user-button">
+  <button class="circle-button" id="user-info-button" onclick="showUserInfo()">User</button>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
